@@ -1,0 +1,44 @@
+---
+kind: pipeline
+name: default
+
+clone:
+    disable: true
+
+steps:
+
+- name: clone-and-verify
+  image: quay.io/natlibfi/drone-verify-git
+  settings:
+     signing_keys:
+       from_secret: melinda_signing_keys
+
+- name: audit
+  image: node:12
+  commands: ['npm audit --package-json-only']
+            
+- name: install
+  image: node:12
+  commands: ['npm ci --ignore-scripts']
+
+- name: test
+  image: node:12
+  commands: ['npm test']
+
+- name: static-security-scan
+  image: quay.io/natlibfi/nodejsscan
+  commands: ['python /usr/src/app/cli.py -d src']
+
+- name: npm-publish
+  image: plugins/npm
+  settings:
+    registry: 'https://registry.npmjs.org/'
+    token:
+      from_secret: npm_token
+  when:
+    event: tag   
+---
+kind: signature
+hmac: dc60dafb90ef31c350dd7f4bf869275a398abcf6e7f899f873b6954ce92d109d
+
+...
