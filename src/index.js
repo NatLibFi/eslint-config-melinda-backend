@@ -180,7 +180,6 @@ module.exports = {
         'no-process-env': 'error',
         'no-process-exit': 'error',
         'no-restricted-modules': 'error',
-        'no-sync': 'error',
         'array-bracket-newline': 'error',
         'array-bracket-spacing': 'error',
         'array-element-newline': 'error',
