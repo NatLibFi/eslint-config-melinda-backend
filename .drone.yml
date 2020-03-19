@@ -15,7 +15,7 @@ steps:
 
 - name: audit
   image: node:12
-  commands: ['npm audit --package-json-only']
+  commands: ['npm audit --package-json-only --audit-level=moderate']
             
 - name: install
   image: node:12
@@ -39,6 +39,6 @@ steps:
     event: tag   
 ---
 kind: signature
-hmac: dc60dafb90ef31c350dd7f4bf869275a398abcf6e7f899f873b6954ce92d109d
+hmac: 6d7fa3f8a3b09bf577a16d8f6fcd94aed51ea2133744fc914da113133683701e
 
 ...
