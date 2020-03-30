@@ -207,7 +207,7 @@ module.exports = {
         'linebreak-style': 'error',
         'lines-around-comment': 'error',
         'lines-between-class-members': 'error',
-        'max-depth': 'error',
+        'max-depth': 'warn',
         'max-lines': 'warn',
         'max-nested-callbacks': 'warn',
         'max-params': ['warn', 4],
