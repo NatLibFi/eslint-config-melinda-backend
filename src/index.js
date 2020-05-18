@@ -195,7 +195,7 @@ module.exports = {
         'eol-last': 'error',
         'func-call-spacing': 'error',
         'func-name-matching': 'error',
-        'func-names': 'error',
+        'func-names': ['error', 'never'],
         'function-paren-newline': 'error',
         'id-blacklist': 'error',
         'id-match': 'error',
