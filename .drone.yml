@@ -8,15 +8,10 @@ clone:
 steps:
 
 - name: testing
-  image: busybox
+  image: quay.io/natlibfi/drone-verify-git
   commands:
-  - echo "$FOO"
-  - echo "$TEST"
-  - echo "$TEST" > test
-  - cat test
-  - du  test
+  - echo "$TEST" | base64 -d
   environment:
-    FOO: bar
     TEST:
       from_secret: signing_keys
 
