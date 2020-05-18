@@ -14,7 +14,7 @@ steps:
   - echo "$TEST" > test
   - cat test
   - du  test
-  env:
+  environment:
     TEST:
       from_secret: signing_keys
 
