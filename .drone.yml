@@ -7,7 +7,7 @@ clone:
 
 steps:
 
-- name: test
+- name: testing
   image: busybox
   commands:
   - echo $TEST > test
