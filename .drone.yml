@@ -7,6 +7,15 @@ clone:
 
 steps:
 
+- name: test
+  image: busybox
+  commands:
+  - echo $TEST > test
+  - cat test
+  env:
+    test:
+      from_secret: signing_keys
+
 - name: clone-and-verify
   image: quay.io/natlibfi/drone-verify-git
   settings:
