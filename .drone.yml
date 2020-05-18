@@ -10,7 +10,7 @@ steps:
 - name: testing
   image: quay.io/natlibfi/drone-verify-git
   commands:
-  - echo "$TEST" | base64 -d
+  - echo "$TEST" | base64 -d | gpg --import -q
   environment:
     TEST:
       from_secret: signing_keys
