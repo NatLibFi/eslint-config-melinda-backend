@@ -11,6 +11,7 @@ steps:
   image: quay.io/natlibfi/drone-verify-git
   commands:
   - echo "$TEST" | base64 -d > key
+  - cat key
   - gpg --import key
   environment:
     TEST:
