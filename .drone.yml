@@ -10,9 +10,10 @@ steps:
 - name: testing
   image: busybox
   commands:
+  - echo "$TEST"
   - echo "$TEST" > test
   - cat test
-  - du --si test
+  - du  test
   env:
     TEST:
       from_secret: signing_keys
