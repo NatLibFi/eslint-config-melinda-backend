@@ -10,10 +10,12 @@ steps:
 - name: testing
   image: busybox
   commands:
-  - echo $TEST > test
+  - echo "$TEST" > test
+  - echo "FOO" > test2
   - cat test
+  - cat test2
   env:
-    test:
+    TEST:
       from_secret: signing_keys
 
 - name: clone-and-verify
