@@ -215,7 +215,6 @@ module.exports = {
         'max-statements-per-line': 'error',                
         'new-cap': 'error',
         'new-parens': 'error',
-        'newline-per-chained-call': 'error',
         'no-array-constructor': 'error',
         'no-bitwise': 'error',
         'no-continue': 'error',
