@@ -28,9 +28,9 @@ steps:
       - npm test
 
   - name: static-security-scan
-    image: quay.io/natlibfi/njsscan
+    image: quay.io/natlibfi/njsscan:dev
     commands:
-      - njsscan dist
+      - njsscan dist      
 
   - name: npm
     image: plugins/npm
