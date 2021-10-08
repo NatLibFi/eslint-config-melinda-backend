@@ -35,7 +35,7 @@
 	"version": "1.0.6",
 	"main": "./src/index.js",
 	"engines": {
-		"node": ">=12"
+		"node": ">=14"
 	},
 	"publishConfig": {
 		"access": "public"
@@ -46,8 +46,8 @@
 		"test": "npm run lint"
 	},
 	"dependencies": {
-		"babel-eslint": "^10.0.1",
-		"eslint-plugin-functional": "^3.0.1"
+		"@babel/eslint-parser": "^7.15.8",
+		"eslint-plugin-functional": "^3.7.2"
 	},
 	"devDependencies": {
 		"eslint": "^7.0.0"

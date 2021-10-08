@@ -30,7 +30,7 @@ module.exports = {
     parserOptions: {
         ecmaVersion: '2020'
     },
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
     env: {
         mocha: true,
         node: true,
@@ -207,10 +207,10 @@ module.exports = {
         'lines-around-comment': 'error',
         'lines-between-class-members': 'error',
         'max-depth': 'warn',
-        'max-lines': 'warn',
+        'max-lines': ['warn', {"max": 400, "skipComments": true, "skipBlankLines": true}],
         'max-nested-callbacks': 'warn',
         'max-params': ['warn', 4],
-        'max-statements': 'warn',
+        'max-statements': ['warn', 20, { "ignoreTopLevelFunctions": true }],
         'max-statements-per-line': 'error',
         'new-cap': 'error',
         'new-parens': 'error',
