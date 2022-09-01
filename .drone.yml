@@ -18,7 +18,7 @@ steps:
   - name: install
     image: node:12
     environment:
-      NPM_CONFIG_IGNORE_SCRIPTS: true
+      NPM_CONFIG_IGNORE_SCRIPTS: true      
     commands:
       - npm ci
 
@@ -30,7 +30,7 @@ steps:
   - name: static-security-scan
     image: quay.io/natlibfi/njsscan
     commands:
-      - njsscan src
+      - njsscan src     
 
   - name: npm
     image: plugins/npm
@@ -39,7 +39,7 @@ steps:
       token:
         from_secret: npm_token
     when:
-      event: tag
+      event: tag 
 ---
 kind: pipeline
 type: docker
