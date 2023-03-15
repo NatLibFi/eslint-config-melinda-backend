@@ -46,14 +46,14 @@
 		"test": "npm run lint"
 	},
 	"dependencies": {
-		"@babel/eslint-parser": "^7.18.9",
-		"eslint-plugin-functional": "^4.2.2"
+		"@babel/eslint-parser": "^7.21.3",
+		"eslint-plugin-functional": "^4.4.1"
 	},
 	"devDependencies": {
-		"eslint": "^8.23.0"
+		"eslint": "^8.36.0"
 	},
 	"peerDependencies": {
-		"eslint": "^8.23.0"
+		"eslint": "^8.36.0"
 	},
 	"eslintConfig": {
 		"env": {
