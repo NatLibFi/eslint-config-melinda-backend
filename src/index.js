@@ -290,8 +290,8 @@ module.exports = {
         'functional/immutable-data': 'error',
         'functional/no-let': 'error',
         'functional/no-this-expression': 'error',
-        'functional/no-loop-statement': 'error',
-        'functional/no-conditional-statement': [
+        'functional/no-loop-statements': 'error',
+        'functional/no-conditional-statements': [
             'error',
             {
                 'allowReturningBranches': true
