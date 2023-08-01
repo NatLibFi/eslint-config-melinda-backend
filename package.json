@@ -47,8 +47,8 @@
 	},
 	"dependencies": {
 		"@babel/eslint-parser": "^7.22.9",
-		"@typescript-eslint/type-utils": "^6.21.0",
-		"@typescript-eslint/utils": "^6.21.0",
+		"@typescript-eslint/type-utils": "^6.2.1",
+		"@typescript-eslint/utils": "^6.2.1",
 		"eslint-plugin-functional": "^6.0.0"
 	},
 	"devDependencies": {
