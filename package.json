@@ -46,9 +46,9 @@
 		"test": "npm run lint"
 	},
 	"dependencies": {
-		"@babel/eslint-parser": "^7.22.9",
-		"@typescript-eslint/type-utils": "^6.2.1",
-		"@typescript-eslint/utils": "^6.2.1",
+		"@babel/eslint-parser": "^7.22.10",
+		"@typescript-eslint/type-utils": "^6.3.0",
+		"@typescript-eslint/utils": "^6.3.0",
 		"eslint-plugin-functional": "^6.0.0"
 	},
 	"devDependencies": {
