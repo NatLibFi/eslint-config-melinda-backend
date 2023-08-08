@@ -29,7 +29,6 @@
 module.exports = {
     parserOptions: {
         ecmaVersion: '2020',
-        project: './tsconfig.json'
     },
     parser: '@babel/eslint-parser',
     env: {
