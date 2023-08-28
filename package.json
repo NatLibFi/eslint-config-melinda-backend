@@ -52,10 +52,10 @@
 		"eslint-plugin-functional": "^6.0.0"
 	},
 	"devDependencies": {
-		"eslint": "^8.47.0"
+		"eslint": "^8.48.0"
 	},
 	"peerDependencies": {
-		"eslint": "^8.47.0"
+		"eslint": "^8.48.0"
 	},
 	"eslintConfig": {
 		"env": {
