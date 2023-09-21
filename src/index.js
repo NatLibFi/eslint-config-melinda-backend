@@ -4,7 +4,7 @@
 *
 * ESLint config for Melinda's backend applications
 *
-* Copyright (C) 2020-2023 University Of Helsinki (The National Library Of Finland)
+* Copyright (C) 2020-2022 University Of Helsinki (The National Library Of Finland)
 *
 * This file is part of eslint-config-melinda-backend
 *
@@ -28,8 +28,7 @@
 
 module.exports = {
     parserOptions: {
-        ecmaVersion: '2020',
-        project: './tsconfig.json'
+        ecmaVersion: '2020'
     },
     parser: '@babel/eslint-parser',
     env: {
