@@ -291,12 +291,6 @@ module.exports = {
         'functional/immutable-data': 'error',
         'functional/no-let': 'error',
         'functional/no-this-expressions': 'error',
-        'functional/no-loop-statements': 'error',
-        'functional/no-conditional-statements': [
-            'error',
-            {
-                'allowReturningBranches': true
-            }
-        ]
+        'functional/no-loop-statements': 'error'
     }
 };
