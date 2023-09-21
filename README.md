@@ -2,8 +2,10 @@
 
 ESLint config for Melinda's backend applications
 
+Note: Updating [eslint-plugin-functional] (https://www.npmjs.com/package/eslint-plugin-functional) to version 6.0.0 breaks eslint-config-melinda-backend (situation 21.9.2023).
+
 ## License and copyright
 
-Copyright (c) 2020-2022 **University Of Helsinki (The National Library Of Finland)**
+Copyright (c) 2020-2023 **University Of Helsinki (The National Library Of Finland)**
 
 This project's source code is licensed under the terms of **GNU Lesser General Public License Version 3** or any later version.
