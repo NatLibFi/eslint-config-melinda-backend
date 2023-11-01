@@ -80,7 +80,7 @@ module.exports = {
         'use-isnan': 'error',
         'valid-typeof': 'error',
         'accessor-pairs': 'error',
-        'array-callback-return': 'error',
+        'array-callback-return': ["error", { checkForEach: false }],
         'block-scoped-var': 'error',
         'class-methods-use-this': 'error',
         'complexity': 'error',
