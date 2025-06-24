@@ -32,7 +32,7 @@
 		"url": "git@github.com:natlibfi/eslint-config-melinda-backend.git"
 	},
 	"license": "MIT",
-	"version": "3.0.5",
+	"version": "3.0.6-alpha.1",
 	"main": "./src/index.js",
 	"engines": {
 		"node": ">=16"
@@ -46,13 +46,13 @@
 		"test": "npm run lint"
 	},
 	"dependencies": {
-		"@babel/eslint-parser": "^7.22.15",
-		"@typescript-eslint/type-utils": "^6.7.2",
+		"@babel/eslint-parser": "^7.27.5",
+		"@typescript-eslint/type-utils": "^6.21.0",
 		"@typescript-eslint/utils": "^6.4.1",
 		"eslint-plugin-functional": "^5.0.8"
 	},
 	"devDependencies": {
-		"eslint": "^8.49.0"
+		"eslint": "^8.57.1"
 	},
 	"peerDependencies": {
 		"eslint": "^8.49.0"
